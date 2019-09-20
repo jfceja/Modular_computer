@@ -3,7 +3,7 @@
 // 		then you have to manually commpile that along with main() since it defaults to
 // 		look for <dependency>.java
 
-public class Computer implements IComputer{
+public class Computer implements IComputer {
 	private IComputerPart cpu_computer;
 	private IComputerPart hdd_computer;
 
