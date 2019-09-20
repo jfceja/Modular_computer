@@ -1,23 +1,23 @@
-public class HDD implements IHardDrive {
+public class HDD implements IComputerPart {
 	private int HDDCapacity;
 	private String HDDName;
 	private String HDDBrand;
 
 	public HDD() {
-		replaceHDD(1024, "Green", "Western Digital");
+		replacePart(1024, "Green", "Western Digital");
 	}
 
 	public HDD(int HDDCapacity, String HDDName, String HDDBrand) {
-		replaceHDD(HDDCapacity, HDDName, HDDBrand);
+		replacePart(HDDCapacity, HDDName, HDDBrand);
 	}
 
-	public void replaceHDD(int HDDCapacity, String HDDName, String HDDBrand) {
+	public void replacePart(int HDDCapacity, String HDDName, String HDDBrand) {
 		this.HDDCapacity = HDDCapacity;
 		this.HDDName = HDDName;
 		this.HDDBrand = HDDBrand;
 	}
 
-	public void getHDDSpecs() {
+	public void getSpecs() {
 		System.out.println(getHDDBrand() + " " + getHDDName() + " @ " + getHDDCapacity() + " GB");
 	}
 
