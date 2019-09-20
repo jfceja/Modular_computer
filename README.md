@@ -2,4 +2,4 @@
 Dependency chart:
 
 
-![Dependency chart](https://i.imgur.com/uFRF0jC.png)
+![Dependency chart](https://i.imgur.com/K0eaH2n.png)

@@ -5,26 +5,26 @@
 	instantiate that class later on.
 */
 
-public class CPU implements ICPU {
+public class CPU implements IComputerPart {
 	private int CPUSpeed;
 	private String CPUName;
 	private String CPUBrand;
 
 	public CPU() {
-		replaceCPU(3500, "Some core i series", "Probably Intel");
+		replacePart(3500, "Some core i series", "Probably Intel");
 	}
 
 	public CPU(int CPUSpeed, String CPUName, String CPUBrand) {
-		replaceCPU(CPUSpeed, CPUName, CPUBrand);
+		replacePart(CPUSpeed, CPUName, CPUBrand);
 	}
 
-	public void replaceCPU(int CPUSpeed, String CPUName, String CPUBrand) {
+	public void replacePart(int CPUSpeed, String CPUName, String CPUBrand) {
 		this.CPUSpeed = CPUSpeed;
 		this.CPUName = CPUName;
 		this.CPUBrand = CPUBrand;
 	}
 
-	public void getCPUSpecs() {
+	public void getSpecs() {
 		System.out.println(getCPUBrand() + " " + getCPUName() + " @ " + getCPUSpeed() + " MHZ");
 	}
 
